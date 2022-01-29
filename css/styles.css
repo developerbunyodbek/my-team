@@ -532,6 +532,7 @@ img {
 /* CLIENTS */
 .clients {
   padding: 140px 0;
+  background-color: #012F34;
   background-image: url("../images/clients-circle.svg");
   background-repeat: no-repeat;
   background-position: right calc(50% + 575px) top;
