@@ -163,8 +163,10 @@ img {
 
 /* HERO */
 .hero {
-  position: relative;
   padding: 56px 0 250px;
+  background-image: url("../images/hero-circle-dark.svg"), url("../images/hero-circle-red.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 675px) top calc(10% + 80px), left calc(50% + 350px) bottom -100px;
 }
 
 .hero-container {
@@ -205,23 +207,13 @@ img {
   margin: 0;
 }
 
-.hero-circle-dark {
-  position: absolute;
-  left: -100px;
-}
-
-.hero-circle-red {
-  position: absolute;
-  right: 165px;
-  bottom: -100px;
-}
-
 /* SERVICES */
 .services {
-  position: relative;
-  z-index: 1;
   padding: 140px 0;
   background-color: #012f34;
+  background-image: url("../images/services-circle-image.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left calc(50% + 675px);
 }
 
 .services-container {
@@ -282,19 +274,12 @@ img {
   opacity: 0.8;
 }
 
-.services-image {
-  width: 200px;
-  height: 244px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: -100px;
-}
-
 /* REVIEWS */
 .reviews {
-  position: relative;
   padding: 140px 0;
+  background-image: url("../images/reviews-bg-left.svg"), url("../images/reviews-bg-right.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 600px) top, left calc(50% + 575px) bottom calc(-100px);
 }
 
 .reviews-title {
@@ -317,7 +302,6 @@ img {
 .reviews-box {
   text-align: center;
   width: 350px;
-  position: relative;
 }
 
 .reviews-box::before {
@@ -362,24 +346,13 @@ img {
   margin: 0 auto;
 }
 
-.reviews-left-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.reviews-right-image {
-  position: absolute;
-  right: 0;
-  bottom: -100px;
-}
-
 /* CTA */
 .cta {
-  position: relative;
-  z-index: 1;
   padding: 76px 0;
   background-color: var(--primary-color);
+  background-image: url("../images/cta-bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom calc(-100px) right calc(50% + 575px);
 }
 
 .cta-container {
@@ -397,16 +370,9 @@ img {
   margin: 0;
 }
 
-.cta-image {
-  position: absolute;
-  left: 0;
-  bottom: -100px;
-}
 
 /* FOOTER */
 .footer {
-  position: relative;
-  z-index: 1;
   padding: 48px 0;
   background-color: #002529;
 }
@@ -481,14 +447,11 @@ img {
   font-size: 64px;
 }
 
-.about-hero-circle-red {
-  position: absolute;
-  right: -100px;
-  bottom: 0;
-}
-
 .about-hero {
   padding: 56px 0 120px;
+  background-image: url("../images/about-hero-circle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left calc(50% + 675px);
 }
 
 .directors-title {
@@ -509,6 +472,10 @@ img {
 
 .directors {
   background-color: #004047;
+  padding: 140px 0;
+  background-image: url("../images/reviews-bg-right.svg"), url("../images/reviews-bg-left.svg");
+  background-repeat: no-repeat;
+  background-position: top right calc(50% + 675px), bottom left calc(50% + 600px);
 }
 
 .directors-item {
@@ -562,19 +529,14 @@ img {
   transform: translateX(-28px);
 }
 
-.directors-left-image {
-  position: absolute;
-  top: 0;
-  left: -100px;
-}
-
-.directors-right-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 /* CLIENTS */
+.clients {
+  padding: 140px 0;
+  background-image: url("../images/clients-circle.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 575px) top;
+}
+
 .our-clients {
   display: flex;
   align-items: center;
@@ -583,12 +545,6 @@ img {
 
 .our-clients-image {
   display: block;
-}
-
-.clients-image {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .footer-socials-link:hover {
@@ -632,8 +588,10 @@ img {
 }
 
 .contact {
-  position: relative;
   padding: 60px 0 150px;
+  background-image: url("../images/reviews-bg-right.svg"), url("../images/contact-circle-right-image.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 675px) top, left calc(50% + 675px) bottom;
 }
 
 .contact-container {
@@ -669,12 +627,6 @@ img {
 
 .contact-btn {
   margin-top: 24px;
-}
-
-.contact-right-image {
-  position: absolute;
-  bottom: 0;
-  right: -100px;
 }
 
 .directors-item-meet {
