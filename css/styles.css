@@ -95,6 +95,17 @@ img {
   border-color: #012f34;
 }
 
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* MAIN */
 .main-content {
   flex-grow: 1;
@@ -488,6 +499,7 @@ img {
 .directors-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -500,13 +512,13 @@ img {
 }
 
 .directors-item {
+  position: relative;
+  padding: 32px 48px 56px;
   width: 350px;
-  text-align: center;
   background-color: #012f34;
+  text-align: center;
   margin-right: 30px;
   margin-bottom: 48px;
-  padding: 32px 24px 56px;
-  position: relative;
 }
 
 .directors-item-image {
@@ -532,6 +544,11 @@ img {
   margin: 0;
 }
 
+.button-add-active {
+  transform: translateX(-28px) rotate(45deg)!important;
+  background-color: #79c8c7!important;
+}
+
 .directors-item-pulse {
   padding: 20px;
   background-color: var(--primary-color);
@@ -540,6 +557,7 @@ img {
   display: inline-flex;
   position: absolute;
   bottom: -28px;
+  border: 0;
   left: 50%;
   transform: translateX(-28px);
 }
@@ -657,4 +675,51 @@ img {
   position: absolute;
   bottom: 0;
   right: -100px;
+}
+
+.directors-item-meet {
+  padding-bottom: 7px;
+  padding-top: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directors-item-meet-text {
+  line-height: 25px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.directors-social-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.directors-social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.directors-social-link {
+  display: block;
+  color: var(--text-color);
+}
+
+.directors-social-link:hover {
+  color: var(--primary-color);
+}
+
+.directors-social-link:active {
+  opacity: 0.6;
+}
+
+.directors-social-img {
+  display: block;
+  width: 24px;
+  height: 20px;
+  object-fit: cover;
 }
