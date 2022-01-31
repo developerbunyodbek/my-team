@@ -154,7 +154,7 @@ img {
 }
 
 .sitenav-link:hover {
-  opacity: 0.8;
+  color: var(--primary-color);
 }
 
 .sitenav-link:active {
@@ -421,22 +421,22 @@ img {
   display: block;
 }
 
-.footer-icon {
+.footer-socials-link-icon {
   display: block;
-  margin: 0;
-  margin-bottom: 25px;
+}
+
+.footer-socials-link-icon path:hover {
+  fill: var(--primary-color);
+}
+
+.footer-socials-link-icon path:active {
+  opacity: 0.6;
 }
 
 .footer-socials-info {
   line-height: 25px;
   opacity: 0.6;
   font-weight: 500;
-}
-
-.footer-socials-icon-image {
-  width: 24px;
-  height: 24px;
-  display: block;
 }
 
 .hero-right-texts-about {
@@ -527,6 +527,15 @@ img {
   border: 0;
   left: 50%;
   transform: translateX(-28px);
+  cursor: pointer;
+}
+
+.directors-item-pulse:hover {
+  background-color: #79c8c7;
+}
+
+.button-add-active:hover {
+  background-color: var(--primary-color)!important;
 }
 
 /* CLIENTS */
@@ -546,14 +555,6 @@ img {
 
 .our-clients-image {
   display: block;
-}
-
-.footer-socials-link:hover {
-  opacity: 0.8;
-}
-
-.footer-socials-link:active {
-  opacity: 0.6;
 }
 
 /* CONTACT */
